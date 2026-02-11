@@ -1,9 +1,3 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/n-r-w/squirrel.svg)](https://pkg.go.dev/github.com/n-r-w/squirrel)
-[![Go Coverage](https://github.com/n-r-w/squirrel/wiki/coverage.svg)](https://raw.githack.com/wiki/n-r-w/squirrel/coverage.html)
-![CI Status](https://github.com/n-r-w/squirrel/actions/workflows/go.yml/badge.svg)
-[![Stability](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
-[![Go Report](https://goreportcard.com/badge/github.com/n-r-w/squirrel)](https://goreportcard.com/badge/github.com/n-r-w/squirrel)
-
 # Evolution of [github.com/Masterminds/squirrel](https://github.com/Masterminds/squirrel), which unfortunately has not been updated by the author for a long time
 
 Contains breaking changes and new features (see below).
@@ -11,7 +5,7 @@ Contains breaking changes and new features (see below).
 # Squirrel - fluent SQL generator for Go
 
 ```go
-import "github.com/n-r-w/squirrel"
+import "github.com/pixality-inc/squirrel"
 ```
 
 **Squirrel is not an ORM.**
@@ -19,7 +13,7 @@ import "github.com/n-r-w/squirrel"
 Squirrel helps you build SQL queries from composable parts:
 
 ```go
-import sq "github.com/n-r-w/squirrel"
+import sq "github.com/pixality-inc/squirrel"
 
 users := sq.Select("*").From("users").Join("emails USING (email_id)")
 
